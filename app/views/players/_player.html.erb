@@ -1,0 +1,25 @@
+<li class="border border-gray-200 rounded">
+  <div href="#" class="block hover:bg-gray-50">
+    <div class="flex items-center px-4 py-4 sm:px-6">
+      <div class="min-w-0 flex-1 flex items-center">
+        <div class="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
+          <div>
+            <p class="text-sm font-medium"><%= player.name %></p>
+          </div>
+          <div class="hidden md:block">
+            <div>
+              <p class="text-sm text-gray-900">
+                <%= player.team %>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <p>
+          <%= link_to "View", player, class: "text-blue-700 hover:text-blue-500", data: { turbo_frame: "_top" } %>
+        </p>
+      </div>
+    </div>
+  </div>
+</li>
